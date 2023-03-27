@@ -1,0 +1,15 @@
+.nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo img{
+    height:70px;
+}
+.btn__start{
+    margin-right:20px;
+    background: #6B0993;
+}
+.btn__sign{
+    background:transparent;
+}

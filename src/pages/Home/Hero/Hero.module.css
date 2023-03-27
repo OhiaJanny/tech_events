@@ -1,0 +1,27 @@
+.hero{
+    display:flex;
+    column-gap:40px;
+    align-items: center;
+    padding-top:100px;
+}
+@media screen and (max-width:768px){
+    .hero{
+        flex-direction:column;
+    }       
+}
+.heroimg{
+    max-height:600px;
+    width:100%;
+    max-width:391px;
+}
+
+.heroContent{
+    flex-basis:60%;
+}
+.heroContent h1{
+    color:#fff;
+    font-family:'Roboto', sans-serif;
+}
+.heroContent p{
+    color: rgba(255, 255, 255, 0.8);
+}
