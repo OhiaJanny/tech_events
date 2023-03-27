@@ -5,6 +5,7 @@ import Footer from './layout/Footer/Footer'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
 import Signup from './pages/Signup/Signup'
+import Savesit from './pages/Savesit/Savesit'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path='/' element={<Home/>} />
           <Route exact path='/login' element={<Login/>} />
           <Route exact path='/signup' element={<Signup/>} />
+          <Route exact path='/savesit' element={<Savesit/>} />
         </Routes>
         <Footer/>
       </Router>
