@@ -3,6 +3,7 @@ import Hero from './Hero/Hero'
 import Events from './Events/Events'
 
 const Home = () => {
+
   return (
     <>
         <Hero/>
