@@ -44,6 +44,13 @@ const Events = () => {
         let savedEvents = localStorage.getItem('events')
         if(savedEvents){
             let parsedEvents = JSON.parse(savedEvents)
+            for(let i = 0; i < parsedEvents.length; i++){
+                if(parsedEvents[i].id === event.id){
+                    return toast.error('Event already exist!', {
+                        position: toast.POSITION.TOP_RIGHT
+                    });
+                }
+            }
             parsedEvents.push(event)
             localStorage.setItem('events', JSON.stringify(parsedEvents))
         }else{
