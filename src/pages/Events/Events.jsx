@@ -4,7 +4,7 @@ import Events from './Events/Events'
 import Navbar from '../../layout/Navbar/Navbar'
 
 
-const Home = () => {
+const Events = () => {
 
   return (
     <>
@@ -15,4 +15,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Events

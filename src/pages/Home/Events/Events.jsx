@@ -6,10 +6,10 @@ import womencode2 from '../../../assets/womencode2.png'
 import womencode3 from '../../../assets/womencode3.png'
 import womencode4 from '../../../assets/womencode4.png'
 import {Link} from 'react-router-dom'
+import { toast } from 'react-toastify';
 
 
 const Events = () => {
-
 
     const datas = [
         {
@@ -38,6 +38,25 @@ const Events = () => {
         }
     ]
 
+    const addEvent = (event) =>{
+
+        console.log(event)
+        let savedEvents = localStorage.getItem('events')
+        if(savedEvents){
+            let parsedEvents = JSON.parse(savedEvents)
+            parsedEvents.push(event)
+            localStorage.setItem('events', JSON.stringify(parsedEvents))
+        }else{
+            localStorage.setItem('events', JSON.stringify([event]))
+        }
+
+        toast.success('Event added succesfully', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    }
+
+    
+
 
     return (
         <section className="max-wrapper std-space-top std-space-bottom">
@@ -47,13 +66,13 @@ const Events = () => {
                 </header>
                 <div className={styles.content}>
                     {
-                        datas.map(data => (
+                        datas.map((data, i) => (
                             <Card style={{ width: '20rem' }} key={data.id}>
                                 <Card.Img className={styles.card__img} variant="top" src={data.img} />
                                 <Card.Body className={styles.card__body}>
                                     <Card.Title>{data.title}</Card.Title>
                                     <Card.Subtitle>{data.subtitle}</Card.Subtitle>
-                                    <button className={styles.btn__more}>Add Event</button>
+                                    <button className={styles.btn__more} onClick={()=> addEvent(data)}>Add Event</button>
                                 </Card.Body>
                             </Card>
                         ))
