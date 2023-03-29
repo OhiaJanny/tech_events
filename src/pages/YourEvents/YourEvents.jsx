@@ -1,12 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from '../../layout/Navbar/Navbar'
 import styles from './YourEvents.module.css'
 import Card from 'react-bootstrap/Card'
+import { toast } from 'react-toastify';
 
 
 const YourEvents = () => {
 
-    const datas = JSON.parse(localStorage.getItem('events'))
+    const [datas, setDatas] = useState(JSON.parse(localStorage.getItem('events')) || [])
+
+    const deleteEvent = (event) =>{
+        let newEventArray = datas.filter(data => data.id !== event.id)
+        localStorage.setItem('events', JSON.stringify(newEventArray))
+        setDatas(newEventArray)
+        toast.success('Event Deleted!', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    }
 
     return (
         <>
@@ -18,13 +28,14 @@ const YourEvents = () => {
                 </header>
                 <div className={styles.content}>
                     {
-                        datas ?
-                        datas.map((data, i) => (
-                            <Card style={{ width: '20rem' }} key={i}>
+                        datas.length > 0 ?
+                        datas.map((data) => (
+                            <Card style={{ width: '20rem' }} key={data.id}>
                                 <Card.Img className={styles.card__img} variant="top" src={data.img} />
                                 <Card.Body className={styles.card__body}>
                                     <Card.Title>{data.title}</Card.Title>
                                     <Card.Subtitle>{data.subtitle}</Card.Subtitle>
+                                    <button className={styles.btn__more} onClick={()=> deleteEvent(data)}>Delete Event</button>
                                 </Card.Body>
                             </Card>
                         ))
