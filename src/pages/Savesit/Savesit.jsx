@@ -2,9 +2,13 @@ import React, {useState} from 'react'
 import styles from './Savesit.module.css'
 import Input from '../../components/Input/Input'
 import {Link} from 'react-router-dom'
+import { toast } from 'react-toastify';
+import Navbar from '../../layout/Navbar/Navbar'
+import {useNavigate} from 'react-router-dom'
 
+const Savesit = () => {
 
-const Signup = () => {
+    const navigate = useNavigate()
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -16,9 +20,24 @@ const Signup = () => {
     const [desc, setDesc] = useState('')
     const [desc2, setDesc2] = useState('')
 
+    const submit = () => {
+        if(!name || !email || !number || !gender || !age || !country || !state || !desc || !desc2){
+            toast.error('All fields is required!', {
+                position: toast.POSITION.TOP_RIGHT
+              });
+        } else{
+            toast.success("Successful", {
+                position: toast.POSITION.TOP_RIGHT
+              });
+            navigate('/bootcamp')
+        }
+    }
+
 
   return (
-    <section className="max-wrapper">
+    <>
+        <Navbar/>
+        <section className="max-wrapper">
         <div className="max-wrapper__content">
             <div className={styles.signup}>
                 <header className={styles.header}>
@@ -63,16 +82,14 @@ const Signup = () => {
                         <Input value={desc2} onChange={(e) => setDesc2(e.target.value)}/>
                     </div>
                     <div className={styles.row}>
-                        <button>Submit</button>
-                    </div>
-                    <div className={styles.row}>
-                        <span>Have an account?</span><Link to='/login'>Sign in</Link>
+                        <button onClick={submit}>Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    </>
   )
 }
 
-export default Signup
+export default Savesit

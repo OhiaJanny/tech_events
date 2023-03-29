@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { endpoint } from '../../utils/endpoint';
 import { useNavigate} from 'react-router-dom'
+import Navbar from '../../layout/Navbar/Navbar'
 
 const Signup = () => {
 
@@ -75,7 +76,9 @@ const Signup = () => {
 
 
   return (
-    <section className="max-wrapper">
+    <>
+    <Navbar show={true}/>
+      <section className="max-wrapper">
         <div className="max-wrapper__content">
             <div className={styles.signup}>
                 <header className={styles.header}>
@@ -110,6 +113,7 @@ const Signup = () => {
             </div>
         </div>
     </section>
+    </>
   )
 }
 

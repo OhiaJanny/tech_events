@@ -4,6 +4,8 @@ import Input from '../../components/Input/Input'
 import {Link, useNavigate} from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { endpoint } from '../../utils/endpoint';
+import Navbar from '../../layout/Navbar/Navbar'
+
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -35,7 +37,10 @@ const Login = () => {
           position: toast.POSITION.TOP_RIGHT
         });
       } else {
-        navigate('/')
+        toast.success('Logged in Successfully', {
+          position: toast.POSITION.TOP_RIGHT
+        });
+        navigate('/bootcamp')
       }
     }
     xhr.onerror = function () {
@@ -56,7 +61,9 @@ const Login = () => {
   }
 
   return (
-    <section className="max-wrapper">
+    <>
+      <Navbar show={true}/>
+      <section className="max-wrapper">
         <div className="max-wrapper__content">
             <div className={styles.login}>
                 <header className={styles.header}>
@@ -90,6 +97,7 @@ const Login = () => {
             </div>
         </div>
     </section>
+    </>
   )
 }
 

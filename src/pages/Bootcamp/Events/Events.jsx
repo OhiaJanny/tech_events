@@ -1,15 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import styles from './Events.module.css'
 import Card from 'react-bootstrap/Card'
-import womencode from '../../../assets/womencode.png'
-import womencode2 from '../../../assets/womencode2.png'
-import womencode3 from '../../../assets/womencode3.png'
-import womencode4 from '../../../assets/womencode4.png'
 import { endpoint } from '../../../utils/endpoint'
-
+import {Link} from 'react-router-dom'
 
 const Events = () => {
-
 
     const [events, setEvents] = useState([])
 
@@ -35,7 +30,7 @@ const Events = () => {
                                 <Card.Body className={styles.card__body}>
                                     <Card.Title>{event.title}</Card.Title>
                                     <Card.Subtitle>{event.subtitle}</Card.Subtitle>
-                                    <button className={styles.btn__more}>Register</button>
+                                    <Link to='/savesit'><button className={styles.btn__more}>Register</button></Link>
                                 </Card.Body>
                             </Card>
                         ))

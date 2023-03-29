@@ -3,9 +3,8 @@ import styles from './Navbar.module.css'
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({show}) => {
 
-    let tk = localStorage.getItem('_tk')
 
     return (
         <nav className="max-wrapper">
@@ -14,7 +13,7 @@ const Navbar = () => {
                     <Link to='/'><img src={logo} alt="She Codes Logo" /></Link>
                 </div>
                 {
-                    !tk ?
+                    show ?
                         <div>
                             <Link to='/signup'><button className={styles.btn__start}>Get Started</button></Link>
                             <Link to='login'><button className={styles.btn__sign}>Sign in</button></Link>
