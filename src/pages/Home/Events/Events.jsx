@@ -80,7 +80,7 @@ const Events = () => {
                 </div>
                 <div className={styles.summary}>
                 <Link to='/bootcamp'><button className={styles.btn__extra}>Explore</button></Link>
-                <Link to='/your-events'><button className={styles.btn__extra}>Added Events</button></Link>
+                <Link to='/events'><button className={styles.btn__extra}>Added Events</button></Link>
                 </div>
             </div>
         </section>

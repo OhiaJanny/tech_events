@@ -9,6 +9,7 @@ import Bootcamp from './pages/Bootcamp/Bootcamp'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Auth from './hoc/Auth'
+import YourEvents from './pages/YourEvents/YourEvents'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/signup' element={<Signup/>} />
           <Route exact path='/savesit' element={<Auth><Savesit/></Auth>} />
           <Route exact path='/bootcamp' element={<Auth><Bootcamp/></Auth>} />
+          <Route exact path='/events' element={<YourEvents/>} />
         </Routes>
         <Footer/>
       </Router>
