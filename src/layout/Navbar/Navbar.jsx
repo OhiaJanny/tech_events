@@ -16,7 +16,7 @@ const Navbar = ({show}) => {
                     show ?
                         <div>
                             <Link to='/signup'><button className={styles.btn__start}>Get Started</button></Link>
-                            <Link to='login'><button className={styles.btn__sign}>Sign in</button></Link>
+                            <Link to='/login'><button className={styles.btn__sign}>Sign in</button></Link>
                         </div>
                         :
                         ''
