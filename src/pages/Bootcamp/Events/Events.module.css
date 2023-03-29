@@ -1,0 +1,37 @@
+.header{
+    margin-bottom:25px;
+}
+.header h1{
+    color:#fff;
+}
+
+.content{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.card__img{
+    height:212px;
+}
+
+.card__body{
+    background:#01053B;
+    color:#fff;
+}
+
+.btn__more{
+    margin-top:25px;
+    border-radius: 25px;
+    background:transparent;
+    border:1px solid #A20F96;
+    padding: 8px 16px;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+}
+.btn__more:hover{
+    background:#A20F96;
+}
+
