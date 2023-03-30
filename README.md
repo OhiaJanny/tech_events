@@ -41,7 +41,7 @@ For my backend please check this repo: https://github.com/OhiaJanny/tech_events_
         
        LINKS
        
-Frontent Repo link: https://github.com/OhiaJanny/tech_events
+Frontend Repo link: https://github.com/OhiaJanny/tech_events
 
 Backend Repo link: https://github.com/OhiaJanny/tech_events_backend
 
@@ -49,3 +49,6 @@ Frontend Deployed link: https://her-code-events.vercel.app/
 
 Backend deployed link: https://women-intech.onrender.com/
 
+
+            THANK YOU
+Thank you for reading to this point. Let's connect at janechidera12@gmail.com            
