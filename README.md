@@ -38,7 +38,7 @@ For my backend please check this repo: https://github.com/OhiaJanny/tech_events_
 ![WhatsApp Image 2023-03-30 at 9 10 41 PM](https://user-images.githubusercontent.com/92087695/228959705-ebf3f190-53ef-406b-87ae-3bb1e5b58ca1.jpeg)
            
         
-        A SLIDE PRESENTATION
+     
         
         
        LINKS
