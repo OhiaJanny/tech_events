@@ -5,6 +5,7 @@ import {Link, useNavigate} from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { endpoint } from '../../utils/endpoint';
 import Navbar from '../../layout/Navbar/Navbar'
+import { validateEmail } from '../../utils/validateEmail';
 
 
 const Login = () => {
@@ -17,7 +18,7 @@ const Login = () => {
 
   const login = () => {
 
-    if (!(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email))){
+    if (!validateEmail(email)){
       return toast.error("Invalid email", {
         position: toast.POSITION.TOP_RIGHT
       });
@@ -87,7 +88,7 @@ const Login = () => {
                     </div>
                     <div className={styles.row}>
                         {
-                            loading ? <button className={styles.btn__loading}>Sign in</button> : <button onClick={login}>Sign in</button>
+                            loading ? <button className={styles.btn__loading}>Loading...</button> : <button onClick={login}>Sign in</button>
                         }
                     </div>
                     <div className={styles.row}>
