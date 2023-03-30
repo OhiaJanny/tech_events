@@ -15,8 +15,26 @@ skills, which employers will want to observe.
 
         LETS HOP INTO THE PROJECT (Description)
         
-A web-based event website that shows upcoming events and available Bootcamp courses to encourage more women in the tech space. 
+This project (her-tech-event) is web-based event website that shows upcoming events and available Bootcamp courses to encourage more women in the tech space. 
 Women interested in tech and women already in tech can sign up for events, register for a free Bootcamp and subscribe to be updated for the next coming events and Bootcamp.
+
+
+       TECHNOLOGIES USED 
+       
+React.js
+Express.js
+Node.js
+MonoDB
+Cloudinary
+Vite
+Mongoose
+Sucket.io
+
+For my backend please check this repo: https://github.com/OhiaJanny/tech_events_backend.
+
+           A SCREENSHOOT OF WHAT MY PROJECT LOOKS LIKE.
+           
+           
         
         
         
