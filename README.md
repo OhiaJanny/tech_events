@@ -34,6 +34,8 @@ For my backend please check this repo: https://github.com/OhiaJanny/tech_events_
 
            A SCREENSHOOT OF WHAT MY PROJECT LOOKS LIKE.
            
+![WhatsApp Image 2023-03-30 at 9 11 17 PM](https://user-images.githubusercontent.com/92087695/228959595-a29cdeb5-f12f-486c-8cf4-521d58d875e2.jpeg)
+![WhatsApp Image 2023-03-30 at 9 10 41 PM](https://user-images.githubusercontent.com/92087695/228959705-ebf3f190-53ef-406b-87ae-3bb1e5b58ca1.jpeg)
            
         
         A SLIDE PRESENTATION
