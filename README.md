@@ -10,7 +10,7 @@ the Git branch workflow and pull requests.
 
 
 I  used everything you’ve learned to create a real-world client-side web-page application that I’ll be 
-able to showcase to potential employers. This project  provided you with the best opportunity to demonstrate my problem-solving 
+able to showcase to potential employers. This project  provided me with the best opportunity to demonstrate my problem-solving 
 skills, which employers will want to observe. 
 
         LETS HOP INTO THE PROJECT (Description)
@@ -21,14 +21,14 @@ Women interested in tech and women already in tech can sign up for events, regis
 
        TECHNOLOGIES USED 
        
-React.js
-Express.js
-Node.js
-MonoDB
-Cloudinary
-Vite
-Mongoose
-Sucket.io
+React.js,
+Express.js,
+Node.js,
+MonoDB,
+Cloudinary,
+Vite,
+Mongoose,
+Sucket.io.
 
 For my backend please check this repo: https://github.com/OhiaJanny/tech_events_backend.
 
