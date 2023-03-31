@@ -9,7 +9,7 @@ storing my project code in GitHub, managing my work with a project management to
 the Git branch workflow and pull requests.
 
 
-I  used everything you’ve learned to create a real-world client-side web-page application that I’ll be 
+I  used everything I’ve learned to create a real-world client-side web-page application that I’ll be 
 able to showcase to potential employers. This project  provided me with the best opportunity to demonstrate my problem-solving 
 skills, which employers will want to observe. 
 
